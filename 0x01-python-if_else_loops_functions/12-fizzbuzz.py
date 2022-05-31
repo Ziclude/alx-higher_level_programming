@@ -7,4 +7,4 @@ def fizzbuzz():
             print("Buzz", end='')
         if cat % 3 and cat % 5:
             print("{:d}".format(cat), end='')
-        print(end='')
+        print(end=' ')
