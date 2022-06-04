@@ -29,19 +29,19 @@ return (*head);
 int is_palindrome(listint_t **head)
 {
 listint_t *tp, *rvs, *md;
-size_t sz = 0, a;
+size_t size = 0, a;
 if (*head == NULL || (*head)->next == NULL)
 return (1);
 tp = *head;
 while (tp)
 {
-sz++;
+size++;
 tp = tp->next;
 }
 tp = *head;
-for (a = 0; a < (sz / 2) - 1; a++)
+for (a = 0; a < (size / 2) - 1; a++)
 tp = tp->next;
-if ((sz % 2) == 0 && tp->n != tp->next->n)
+if ((size % 2) == 0 && tp->n != tp->next->n)
 return (0);
 tp = tp->next->next;
 rvs = reverse_listint(&tp);
