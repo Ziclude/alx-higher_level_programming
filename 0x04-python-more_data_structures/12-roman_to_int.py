@@ -8,8 +8,10 @@ def roman_to_int(roman_string):
     for a in range(len(roman_string)):
         if my_dictio.get(roman_string[a], 0) == 0:
             return 0
-        if (a != (len(roman_string) - 1) and
-            my_dictio[roman_string[a]] < my_dictio[roman_string[a + 1]]):
+        if (
+                a != (len(roman_string) - 1)
+                and my_dictio[roman_string[a]] < my_dictio[roman_string[a + 1]]
+        ):
             numb += my_dictio[roman_string[a]] * -1
         else:
             numb += my_dictio[roman_string[a]]
