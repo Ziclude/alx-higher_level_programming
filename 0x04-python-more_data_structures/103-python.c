@@ -22,7 +22,7 @@ for (a = 0; a < size; a++)
 {
 type = list->ob_item[a]->ob_type->tp_name;
 printf("Element %d: %s\n", a, type);
-if(strcmp(type, "bytes") == 0)
+if (strcmp(type, "bytes") == 0)
 print_python_bytes(list->ob_item[a]);
 }
 }
