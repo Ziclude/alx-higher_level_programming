@@ -10,4 +10,4 @@ def magic_calculation(a, b):
         except (ValueError, TypeError):
             cat = b + a
             break
-        return (cat)
+    return (cat)
