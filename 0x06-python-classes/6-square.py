@@ -25,6 +25,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
     @property
     def position(self):
         """Get the square's position."""
@@ -53,4 +54,3 @@ class Square:
             [print(" ", end="") for b in range(0, self.__position[0])]
             [print("#", end="") for c in range(0, self.__size)]
             print("")
-
