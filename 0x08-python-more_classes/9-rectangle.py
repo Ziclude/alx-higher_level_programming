@@ -78,6 +78,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """New Rectangle with size equal to width and height.
+
         Args:
            size (int): width and height of new rectangle.
         """
@@ -87,6 +88,7 @@ class Rectangle:
         """Return and represents rectangle with # character"""
         if self.__width == 0 or self.__height == 0:
             return ("")
+
         rectan = []
         for a in range(self.__height):
             [rectan.append(str(self.print_symbol)) for
