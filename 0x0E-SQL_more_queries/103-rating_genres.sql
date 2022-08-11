@@ -1,6 +1,6 @@
 -- Lists all shows from database
 -- Ordered by descending rating
-SELECT title, SUM(rate) AS rating
+SELECT name, SUM(rate) AS rating
 FROM tv_genres AS g
 INNER JOIN tv_show_genres AS s
 ON s.genre_id = g.id
